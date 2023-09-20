@@ -90,6 +90,7 @@
 		32BAF8A72ABA677300B5799C /* snakeGameXcode */ = {
 			isa = PBXGroup;
 			children = (
+				32FB6ECF2ABA7EBD002D15BE /* release */,
 				3219C1642ABA6C0A00DEF804 /* sounds */,
 				3219C1652ABA6C1400DEF804 /* images */,
 				32BAF8A82ABA677300B5799C /* main.cpp */,
@@ -106,6 +107,13 @@
 				32BAF8B02ABA699B00B5799C /* OpenGL.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		32FB6ECF2ABA7EBD002D15BE /* release */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = release;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
