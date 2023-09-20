@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		32BAF8A92ABA677300B5799C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32BAF8A82ABA677300B5799C /* main.cpp */; };
+		32BAF8B12ABA699B00B5799C /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BAF8B02ABA699B00B5799C /* OpenGL.framework */; };
+		32BAF8B32ABA69A600B5799C /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BAF8B22ABA69A600B5799C /* IOKit.framework */; };
+		32BAF8B52ABA69B000B5799C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BAF8B42ABA69B000B5799C /* Cocoa.framework */; };
+		32BAF8B72ABA6A8E00B5799C /* libraylib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BAF8B62ABA6A8E00B5799C /* libraylib.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +27,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		32B4460B2ABA6D85005FC57A /* food.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = food.png; path = ../../../../snakeCpp/images/food.png; sourceTree = "<group>"; };
+		32B4460C2ABA6DA1005FC57A /* eat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = eat.mp3; path = ../../../../snakeCpp/sound/eat.mp3; sourceTree = "<group>"; };
+		32B4460D2ABA6DA1005FC57A /* wall.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = wall.mp3; path = ../../../../snakeCpp/sound/wall.mp3; sourceTree = "<group>"; };
 		32BAF8A52ABA677300B5799C /* snakeGameXcode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = snakeGameXcode; sourceTree = BUILT_PRODUCTS_DIR; };
 		32BAF8A82ABA677300B5799C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		32BAF8B02ABA699B00B5799C /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		32BAF8B22ABA69A600B5799C /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		32BAF8B42ABA69B000B5799C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		32BAF8B62ABA6A8E00B5799C /* libraylib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libraylib.a; path = "../../Developer/raylib-master/src/libraylib.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,17 +43,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32BAF8B72ABA6A8E00B5799C /* libraylib.a in Frameworks */,
+				32BAF8B52ABA69B000B5799C /* Cocoa.framework in Frameworks */,
+				32BAF8B32ABA69A600B5799C /* IOKit.framework in Frameworks */,
+				32BAF8B12ABA699B00B5799C /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3219C1642ABA6C0A00DEF804 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				32B4460C2ABA6DA1005FC57A /* eat.mp3 */,
+				32B4460D2ABA6DA1005FC57A /* wall.mp3 */,
+			);
+			path = sounds;
+			sourceTree = "<group>";
+		};
+		3219C1652ABA6C1400DEF804 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				32B4460B2ABA6D85005FC57A /* food.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		32BAF89C2ABA677300B5799C = {
 			isa = PBXGroup;
 			children = (
 				32BAF8A72ABA677300B5799C /* snakeGameXcode */,
 				32BAF8A62ABA677300B5799C /* Products */,
+				32BAF8AF2ABA699B00B5799C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +90,22 @@
 		32BAF8A72ABA677300B5799C /* snakeGameXcode */ = {
 			isa = PBXGroup;
 			children = (
+				3219C1642ABA6C0A00DEF804 /* sounds */,
+				3219C1652ABA6C1400DEF804 /* images */,
 				32BAF8A82ABA677300B5799C /* main.cpp */,
 			);
 			path = snakeGameXcode;
+			sourceTree = "<group>";
+		};
+		32BAF8AF2ABA699B00B5799C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32BAF8B62ABA6A8E00B5799C /* libraylib.a */,
+				32BAF8B42ABA69B000B5799C /* Cocoa.framework */,
+				32BAF8B22ABA69A600B5799C /* IOKit.framework */,
+				32BAF8B02ABA699B00B5799C /* OpenGL.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +285,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "/Users/kurtreyn/Developer/raylib-master/src";
+				LIBRARY_SEARCH_PATHS = "/Users/kurtreyn/Developer/raylib-master/src";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -247,6 +295,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "/Users/kurtreyn/Developer/raylib-master/src";
+				LIBRARY_SEARCH_PATHS = "/Users/kurtreyn/Developer/raylib-master/src";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
