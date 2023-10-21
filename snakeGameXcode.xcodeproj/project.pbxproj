@@ -27,6 +27,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3225C88A2AE418D000E8B216 /* snakeGame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snakeGame.png; sourceTree = "<group>"; };
 		32B4460B2ABA6D85005FC57A /* food.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = food.png; path = ../../../../snakeCpp/images/food.png; sourceTree = "<group>"; };
 		32B4460C2ABA6DA1005FC57A /* eat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = eat.mp3; path = ../../../../snakeCpp/sound/eat.mp3; sourceTree = "<group>"; };
 		32B4460D2ABA6DA1005FC57A /* wall.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = wall.mp3; path = ../../../../snakeCpp/sound/wall.mp3; sourceTree = "<group>"; };
@@ -70,6 +71,14 @@
 			path = images;
 			sourceTree = "<group>";
 		};
+		3225C8892AE4189700E8B216 /* projectImage */ = {
+			isa = PBXGroup;
+			children = (
+				3225C88A2AE418D000E8B216 /* snakeGame.png */,
+			);
+			path = projectImage;
+			sourceTree = "<group>";
+		};
 		32BAF89C2ABA677300B5799C = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +99,7 @@
 		32BAF8A72ABA677300B5799C /* snakeGameXcode */ = {
 			isa = PBXGroup;
 			children = (
+				3225C8892AE4189700E8B216 /* projectImage */,
 				32FB6ECF2ABA7EBD002D15BE /* release */,
 				3219C1642ABA6C0A00DEF804 /* sounds */,
 				3219C1652ABA6C1400DEF804 /* images */,
